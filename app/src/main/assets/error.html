@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>No internet connection</title>
+
+    <style type="text/css">
+            /* latin-ext */
+            @font-face {
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: 300;
+                src: local("Raleway Light"), local("Raleway-Light"),
+                    url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIYqWqhPAMif.woff2)
+                        format("woff2");
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020,
+                    U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            /* latin */
+            @font-face {
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: 300;
+                src: local("Raleway Light"), local("Raleway-Light"),
+                    url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIYqWqZPAA.woff2)
+                        format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC,
+                    U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122,
+                    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            /* latin-ext */
+            @font-face {
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: 700;
+                src: local("Raleway Bold"), local("Raleway-Bold"),
+                    url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqhPAMif.woff2)
+                        format("woff2");
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020,
+                    U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            /* latin */
+            @font-face {
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: 700;
+                src: local("Raleway Bold"), local("Raleway-Bold"),
+                    url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqZPAA.woff2)
+                        format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC,
+                    U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122,
+                    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+            body {
+                width: 100vw;
+                height: 100vh;
+                font-family: "Raleway", sans-serif;
+                font-weight: 300;
+                margin: 0;
+                padding: 0;
+            }
+
+
+            #title {
+                background: #48a9e6;
+                height: 7.5em;
+                text-align: center;
+                font-size: 1.5em;
+                padding-top: 1em;
+                position: relative;
+                color: #fff;
+            }
+
+            .text:after {
+                content: "";
+                display: inline-block;
+                width: 100%;
+                height: 10em;
+                background: #fff;
+                position: absolute;
+                top: -13.5em;
+                left: 0;
+                transform: skewY(-3deg);
+                -webkit-transform: skewY(-3deg);
+            }
+
+            .text {
+                background: #fff;
+                text-align: center;
+                position: relative;
+                margin-top: -4em;
+            }
+
+            .text p {
+                font-size: 2em;
+                color: #999;
+                margin-top: 5em;
+                position: relative;
+                z-index: 9;
+                line-height: 100%;
+            }
+
+
+
+        </style>
+</head>
+
+<body>
+<section id="not-found">
+    <div id="title">Sin conexión a internet</div>
+    <div class="text">
+        <p>Prueba más tarde</p>
+    </div>
+</section>
+</body>
+</html>

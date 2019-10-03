@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0277bd</color>
+    <color name="colorPrimaryDark">#004c8c</color>
+    <color name="colorAccent">#58a5f0</color>
+
+
+    <color name="colorIcon">#81c784</color>
+
+    <color name="menuItems">#757575</color>
+    <color name="menuItemsFocus">#424242</color>
+</resources>
