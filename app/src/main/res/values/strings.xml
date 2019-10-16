@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Dipuerto</string>
+    <string name="app_name">Desarrollo</string>
 
     <!-- Strings related to login with password -->
     <string name="prompt_alias">Alias</string>

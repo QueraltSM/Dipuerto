@@ -72,7 +72,7 @@ import es.disoft.dicloud.notification.NotificationUtils;
 import es.disoft.dicloud.workers.ChatWorker;
 
 import static es.disoft.dicloud.ConnectionAvailable.isNetworkAvailable;
-import static java.lang.Thread.sleep;
+
 
 public class WebViewActivity extends AppCompatActivity {
 
@@ -247,9 +247,9 @@ public class WebViewActivity extends AppCompatActivity {
 
         if (loadedFromNotification())
             openChat();
-        else if (state != null) {
+        else if (state != null)
             webView.saveState(state);
-        } else if (webView.getUrl() == null || webView.getUrl() != null && !webView.getUrl().contains("chat.asp"))
+        else if (webView.getUrl() == null || webView.getUrl() != null && !webView.getUrl().contains("chat.asp"))
             openIndex();
 
         ChatWorker.checkMessagesEvery5sc.context = this;
@@ -691,7 +691,7 @@ public class WebViewActivity extends AppCompatActivity {
 
                 while (!ConnectionAvailable.isNetworkAvailable(getApplicationContext())) {
                     try {
-                        sleep(500);
+                        Thread.sleep(500);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
