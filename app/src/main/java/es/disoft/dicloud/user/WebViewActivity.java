@@ -672,9 +672,12 @@ public class WebViewActivity extends AppCompatActivity {
                     Uri IntentUri    = Uri.parse(url);
                     Intent mapIntent = new Intent(Intent.ACTION_VIEW, IntentUri);
                     mapIntent.setPackage("com.google.android.apps.maps");
-
                     if (mapIntent.resolveActivity(getPackageManager()) != null)
                         startActivity(mapIntent);
+                    return true;
+                } else if (url.startsWith("tel:") || url.startsWith("mailto:") ) {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    startActivity(intent);
                     return true;
                 }
                 return false;
