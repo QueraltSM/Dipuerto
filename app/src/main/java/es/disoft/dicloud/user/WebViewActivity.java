@@ -658,7 +658,7 @@ public class WebViewActivity extends AppCompatActivity {
                         closeSession();
                     }
                     return true;
-                } else if (url.contains("/news/resmen.asp")) {
+                } else if (url.contains("/news/newmen.asp")) {
 
                     Log.wtf("----> ", "shouldOverrideUrlLoading:");
                     Log.wtf("----> ", "antes:" + sendMessagePageReloads);
