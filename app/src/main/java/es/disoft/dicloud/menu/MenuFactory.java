@@ -108,7 +108,7 @@ public class MenuFactory {
                     childModel = new MenuModel(submenuItem.submenu, false, false, url, null);
                     childModelsList.add(childModel);
                 }
-                childList.put(menuModel, childModelsList);
+                if (!menuHeader.equals("Desconectar")) childList.put(menuModel, childModelsList);
 
             } else {
                 childList.put(menuModel, null);
